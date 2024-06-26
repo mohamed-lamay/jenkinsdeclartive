@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('scm checkout') {
+            steps {
+                echo 'getting from github'
+                echo 'completed'
+            }
+        }
+    stage('build') {
+            steps {
+                echo 'completed'
+            }
+        }  
+        stage('deploy') {
+            steps {
+                echo 'completed'
+            }
+        }    
+    }
+}
